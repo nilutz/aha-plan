@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700');
+/// Overwrite Roboto default font
+$md-font-name: Work ;
+
+@import '~react-md/src/scss/react-md';
+@include react-md-everything;
+
+$md-primary-color: $md-blue-500;
+$md-secondary-color: $md-blue-a-200;
+$md-tertiary-color: $md-blue-500;
+
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color:rgba(228,230,229,.25);
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover{
+  
+  color:#ffb74d;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  zIndex: 1;
+
+  .headroom-container{
+    margin: 0 auto;
+    max-width: 960px;
+    padding-top: 0px;
+  }
+  
+  .md-icon{
+    font-size:18px;
+    padding-right:5px;
+    color:#000;
+  }
+
+  a {
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#000;
+  }
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+.item-html{
+  
+}

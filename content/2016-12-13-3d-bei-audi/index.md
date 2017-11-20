@@ -1,0 +1,11 @@
+---
+title: Neue 3D Installation bei Audi
+path: /dreid-bei-audi
+date: '2016-12-12'
+tags:
+  - av
+  - ise
+image: img/neuedreid.jpeg
+---
+
+Eine der ersten 3D-Videowalls ohne Brille ist im Forum der Audi AG in Ingolstadt im 1. Stock des Kundencenters installiert. Hier wird dem Kunden ein weiteres Highlight geboten: Das dreidimensionale Filmerlebnis kann betrachtet werden, ohne die ansonsten bei 3D-Darstellungen erforderliche Brille aufzusetzen. Weiterlesen auf [professional-systems.de](https://www.professional-system.de/case-studies/neue-3d-installation-bei-audi/)
