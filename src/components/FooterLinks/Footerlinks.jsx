@@ -1,28 +1,26 @@
-import React,{Component} from 'react'
-import styled from 'styled-components'
-import Button from 'react-md/lib/Buttons'
-import 'font-awesome/scss/font-awesome.scss'
+import React, { Component } from "react";
+import styled from "styled-components";
+import Button from "react-md/lib/Buttons";
+import "font-awesome/scss/font-awesome.scss";
 
+const Footerlink = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  a:link {
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+  }
+`;
 
-const Footerlink=styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align:center;
-    align-items: center;
-    max-width: 100%;
-    a:link{
-      padding:15px;
-      color: #000;
-      text-decoration: none;
-    }
-
-`
-
-class Footerlinks extends Component{
-getLinkElements() {
-    const { footerLinks } = this.props.config
-    const { labeled } = this.props
+class Footerlinks extends Component {
+  getLinkElements() {
+    const { footerLinks } = this.props.config;
+    const { labeled } = this.props;
 
     return footerLinks.map(link => (
       <Button
@@ -33,18 +31,18 @@ getLinkElements() {
         iconClassName={link.iconClassName}
         href={link.url}
       >
-        {labeled ? link.label : ''}
+        {labeled ? link.label : ""}
       </Button>
-    ))
+    ));
   }
 
-render() {
-    const { footerLinks } = this.props.config
+  render() {
+    const { footerLinks } = this.props.config;
     if (!footerLinks) {
-      return null
+      return null;
     }
-    return <Footerlink>{this.getLinkElements()}</Footerlink>
+    return <Footerlink>{this.getLinkElements()}</Footerlink>;
   }
 }
 
-export default Footerlinks
+export default Footerlinks;

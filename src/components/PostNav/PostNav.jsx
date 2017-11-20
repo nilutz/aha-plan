@@ -1,40 +1,34 @@
-import React,{Component} from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React, { Component } from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
 
 const StyledDiv = styled.div`
-overflow: auto;
-width: 100%;
-margin:0.5em;
-`
+  overflow: auto;
+  width: 100%;
+  margin: 0.5em;
+`;
 
 const StyledDivLeft = styled.div`
-float:left;
-`
+  float: left;
+`;
 const StyledDivRight = styled.div`
-float:right;
-`
-
-
+  float: right;
+`;
 
 class PostNav extends Component {
   render() {
-    const { prev, next } = this.props
+    const { prev, next } = this.props;
     return (
       <StyledDiv>
         <StyledDivLeft>
-        { prev != null && 
-          <Link to={prev.frontmatter.path}> Prev </Link> 
-        }
+          {prev != null && <Link to={prev.frontmatter.path}> Prev </Link>}
         </StyledDivLeft>
         <StyledDivRight>
-        { next != null && 
-        <Link to={next.frontmatter.path}> Next </Link>
-        }
+          {next != null && <Link to={next.frontmatter.path}> Next </Link>}
         </StyledDivRight>
       </StyledDiv>
-    )
+    );
   }
 }
 
-export default PostNav
+export default PostNav;

@@ -21,18 +21,13 @@ Blog for aha-plan.de
 
 
 #TODO
-* SEO
 * multi-language!! https://www.gatsbyjs.org/blog/2017-10-17-building-i18n-with-gatsby/
 * RSS 
 * NETLIFY 
 * favicon 
-* impressum 
-* google analystics 
-* fix the contents... 
 * font on blogposts
 * NAVIGATION? 
 * base64 images on load in index.js
-* up on github
 * link pdfs
 
 * tags?

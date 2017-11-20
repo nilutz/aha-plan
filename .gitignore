@@ -7,3 +7,34 @@ public/
 .DS_Store
 yarn-error.log
 yarn.lock
+
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# npm
+node_modules
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# Build Files
+# public/
+.cache/
+
+# Gatsby context
+.gatsby-context.js
+
+# Bundle stats
+bundle-stats.json
