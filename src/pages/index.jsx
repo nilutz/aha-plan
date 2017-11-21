@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
+import { GridList, Card, Media } from 'react-md';
 import Greeter from '../components/Greeter/Greeter';
 import Aboutaha from '../components/Aboutaha/Aboutaha';
 import Awardsaha from '../components/Awardsaha/Awardsaha';
 import Separator from '../components/Separator/Separator';
 import SEO from '../components/SEO/SEO';
-import { GridList, Card, Media } from 'react-md';
+
 
 export default function IndexPage({ data }) {
   const { edges: imgs } = data.middle;
@@ -26,11 +28,11 @@ export default function IndexPage({ data }) {
             <Card key={img.id}>
               <Link style={{ textDecoration: 'none' }} to={path}>
                 <Media aspectRatio="1-1">
-                  <img
+                  <Img
+                    sizes={img.sizes}
                     src={img.sizes.src}
                     srcSet={img.sizes.srcSet}
-                    sizes="(min-width: 960px) 256px, 33vw"
-                    alt = ""
+                    alt=""
                   />
                 </Media>
               </Link>
@@ -65,7 +67,9 @@ export const indexQuery = graphql`
     aha: allImageSharp(filter: { id: { regex: "/portfolio/aha/" } }) {
       edges {
         node {
-          ...Img_details
+          resolutions(width: 125, height: 125) {
+            ...GatsbyImageSharpResolutions
+          }
         }
       }
     }

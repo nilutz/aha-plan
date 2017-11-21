@@ -12,13 +12,13 @@ const Styledh4 = styled.h4`
 `;
 
 const Styledli = styled.li`
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
 `;
 
 const Awardsaha = () => (
   <div>
-    <Styledh1>Awards, Patente und Referenzen</Styledh1>
+    <Styledh1>Patente und Referenzen</Styledh1>
     <div className="md-grid">
       <div className="md-cell md-cell--12">
         <Styledh4>Patente:</Styledh4>

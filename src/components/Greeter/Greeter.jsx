@@ -21,6 +21,7 @@ const Styledh3 = styled.h3`
 `;
 
 const Styledh4 = styled.h4`
+  font-size: 16px;
   text-align: center;
   font-weight: 300;
 `;

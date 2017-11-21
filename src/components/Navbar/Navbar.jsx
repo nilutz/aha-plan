@@ -26,13 +26,13 @@ const Navbar = () => (
   >
     <StyledDiv>
       <Link to="/">
-        <Button flat icon={false} iconClassName="fa fa-home">
+        <Button style={{ fontSize: '25px', fontWeight: '700' }}flat icon={false} iconClassName="fa fa-home">
           {' '}
             Home{' '}
         </Button>
       </Link>
       <Link to="/blog">
-        <Button flat icon={false} iconClassName="fa fa-list-alt">
+        <Button style={{ fontSize: '25px', fontWeight: '700' }} flat icon={false} iconClassName="fa fa-list-alt">
           {' '}
             Blog{' '}
         </Button>

@@ -44,7 +44,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
     const images = result.data.allDirectory.edges;
 
-    posts.forEach(({ node, next, prev }, index) => {
+    posts.forEach(({ node, next, prev }) => {
       createPage({
         path: _.kebabCase(node.frontmatter.path),
         component: blogTemplate,
@@ -55,7 +55,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
     });
 
-    images.forEach(({ node }, index) => {
+    images.forEach(({ node }) => {
       // modifing the returned string
       const slug = node.relativePath.split('/').pop();
 

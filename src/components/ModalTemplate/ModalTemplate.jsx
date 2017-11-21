@@ -21,13 +21,13 @@ export default function ModalTemplate({ data, pathContext }) {
     <div>
       <Styledh1> {head} </Styledh1>
       <div className="md-grid">
-        {imgs.map(({ node: img }, index) => (
+        {imgs.map(({ node: img }) => (
           <div key={img.sizes.src} className="md-cell md-cell--6">
             <Img sizes={img.sizes} />
           </div>
         ))}
       </div>
-      <div style={{ textAlign: 'center', fontWeight: '900', margin: '15px' }}>
+      <div style={{ textAlign: 'center', fontWeight: '700', margin: '15px' }}>
         <Link to="/">
           <Button flat icon={false} href="/" iconClassName="fa fa-home">
             {' '}

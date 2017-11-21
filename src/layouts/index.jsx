@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import Headroom from 'react-headroom';
-import { FontIcon } from 'react-md';
 import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
 

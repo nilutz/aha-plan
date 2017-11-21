@@ -6,7 +6,7 @@ const StyledLink = styled(Link)`
   font-size: 27px;
   font-weight: 500;
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 0.64);
   overflow: hidden;
   white-space: nowrap;
 `;

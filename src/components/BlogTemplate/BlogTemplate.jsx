@@ -15,16 +15,26 @@ const StyledTitle = styled.h1`
   font-weight: 300;
 `;
 const StyledSubTitle = styled.h6`
-  margin-bottom:20px
-  font-size: 10px;
+  margin-bottom:20px;
+  font-size: 14px;
   font-weight: 200;
 `;
 
 const Styleddiv = styled.div`
   text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  
   p {
     font-size: 18px;
     font-weight: 300;
+  }
+
+  ul li{
+
+    font-size: 18px;
+    font-weight: 300;
+
   }
 `;
 
