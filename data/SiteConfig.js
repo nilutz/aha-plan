@@ -2,7 +2,7 @@ module.exports = {
   contentDir: "content",
   siteTitle: "AHa-plan",
   siteDescription: "Blog about AV, Media and Digital Signage",
-  siteLogo: "",
+  siteLogo: "logos/favicon.png",
   siteKeywords: "Av Media Digital Signage Blog Achim Hannemann",
   siteUrl: "https://aha-plan.de",
   pathPrefix: "/blog",
