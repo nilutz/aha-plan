@@ -1,13 +1,14 @@
 module.exports = {
-  extends: ["standard", "standard-react"],
+  extends: ["standard", "standard-react", "airbnb"],
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    node: true
   },
   globals: {
     graphql: true
   },
-  plugins: ["class-property"],
+  plugins: ["class-property", "markdown"],
   parser: "babel-eslint",
   rules: {
     indent: ["off"],

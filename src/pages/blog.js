@@ -1,9 +1,8 @@
-import React from "react";
-import Link from "gatsby-link";
-import Preview from "../components/Preview/Preview";
-import styled from "styled-components";
-import Separator from "../components/Separator/Separator";
-import SEO from "../components/SEO/SEO";
+import React from 'react';
+import styled from 'styled-components';
+import Preview from '../components/Preview/Preview';
+import Separator from '../components/Separator/Separator';
+import SEO from '../components/SEO/SEO';
 
 const H = styled.h1`
   margin-top: 25px;
@@ -29,14 +28,12 @@ export default function Blog({ data }) {
         <H> Neue Einträge: </H>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <div className="post-preview" key={post.id}>
-                <Preview post={post} />
-                <Separator />
-              </div>
-            );
-          })}
+          .map(({ node: post }) => (
+            <div className="post-preview" key={post.id}>
+              <Preview post={post} />
+              <Separator />
+            </div>
+          ))}
       </PostList>
     </div>
   );

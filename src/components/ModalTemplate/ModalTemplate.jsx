@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Img from "gatsby-image";
-import { GridList, Card, Media } from "react-md";
-import Button from "react-md/lib/Buttons";
-import "font-awesome/scss/font-awesome.scss";
-import _ from "lodash";
+import React from 'react';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import Button from 'react-md/lib/Buttons';
+import Link from 'gatsby-link';
+import 'font-awesome/scss/font-awesome.scss';
+import _ from 'lodash';
 
 const Styledh1 = styled.h1`
   margin-top: 25px;
@@ -22,16 +22,18 @@ export default function ModalTemplate({ data, pathContext }) {
       <Styledh1> {head} </Styledh1>
       <div className="md-grid">
         {imgs.map(({ node: img }, index) => (
-          <div key={index} className="md-cell md-cell--6">
+          <div key={img.sizes.src} className="md-cell md-cell--6">
             <Img sizes={img.sizes} />
           </div>
         ))}
       </div>
-      <div style={{ textAlign: "center", fontWeight: "900", margin: "15px" }}>
-        <Button flat icon={false} href="/" iconClassName="fa fa-home">
-          {" "}
-          Home{" "}
-        </Button>
+      <div style={{ textAlign: 'center', fontWeight: '900', margin: '15px' }}>
+        <Link to="/">
+          <Button flat icon={false} href="/" iconClassName="fa fa-home">
+            {' '}
+            Home{' '}
+          </Button>
+        </Link>
       </div>
     </div>
   );

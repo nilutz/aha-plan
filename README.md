@@ -20,10 +20,9 @@ Blog for aha-plan.de
 [react-md]: react-md.mlaursen.com
 
 
-#TODO
+# TODO
 * multi-language!! https://www.gatsbyjs.org/blog/2017-10-17-building-i18n-with-gatsby/
 * RSS 
-* NETLIFY 
 * favicon 
 * font on blogposts
 * NAVIGATION? 

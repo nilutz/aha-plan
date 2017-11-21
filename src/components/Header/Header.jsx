@@ -1,7 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-
-import bg_logo from "./bg_fifa.jpg";
+import React from 'react';
+import styled from 'styled-components';
 
 const Head = styled.header`
   background-image: url("./bg_fifa.jpg");
@@ -61,17 +59,13 @@ const Headh4 = styled.h4`
   }
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <Head>
-        <Overlay>
-          <Headh1> AHa-Plan</Headh1>
-          <Headh4> AV - Medien - Digital Signage </Headh4>
-        </Overlay>
-      </Head>
-    );
-  }
-}
+const Header = () => (
+  <Head>
+    <Overlay>
+      <Headh1> AHa-Plan</Headh1>
+      <Headh4> AV - Medien - Digital Signage </Headh4>
+    </Overlay>
+  </Head>
+);
 
 export default Header;

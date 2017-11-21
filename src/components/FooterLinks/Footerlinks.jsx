@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Button from "react-md/lib/Buttons";
-import "font-awesome/scss/font-awesome.scss";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Button from 'react-md/lib/Buttons';
+import 'font-awesome/scss/font-awesome.scss';
 
 const Footerlink = styled.div`
   display: flex;
@@ -21,7 +21,6 @@ class Footerlinks extends Component {
   getLinkElements() {
     const { footerLinks } = this.props.config;
     const { labeled } = this.props;
-
     return footerLinks.map(link => (
       <Button
         icon={false}
@@ -31,16 +30,12 @@ class Footerlinks extends Component {
         iconClassName={link.iconClassName}
         href={link.url}
       >
-        {labeled ? link.label : ""}
+        {labeled ? link.label : ''}
       </Button>
     ));
   }
 
   render() {
-    const { footerLinks } = this.props.config;
-    if (!footerLinks) {
-      return null;
-    }
     return <Footerlink>{this.getLinkElements()}</Footerlink>;
   }
 }

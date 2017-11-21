@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Impressum = () => (
   <div>
@@ -55,58 +55,57 @@ const Impressum = () => (
         dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser
         Website voll umfänglich nutzen können. Einsatz von Google Analytics
         Diese Website nutzt Google Analytics, einen Webanalysedienst der Google
-        Inc. («Google»). Google Analytics verwendet sog. „Cookies“, Textdateien,
-        die auf Ihrem Computer gespeichert werden und die eine Analyse der
-        Benutzung der Website durch Sie ermöglichen. Die durch den Cookie
-        erzeugten Informationen über Ihre Benutzung diese Website
-        (einschließlich Ihrer IP-Adresse) wird an einen Server der Google in den
-        USA übertragen und dort gespeichert. Google wird diese Informationen
-        benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die
-        Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um
-        weitere mit der Websitenutzung und der Internetnutzung verbundene
-        Dienstleistungen zu erbringen. Auch wird Google diese Informationen
-        gegebenenfalls an Dritte übertragen, sofern dies gesetzlich
-        vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google
-        verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen
-        Daten der Google in Verbindung bringen. Sie können die Installation der
-        Cookies durch eine entsprechende Einstellung Ihrer Browser Software
-        verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall
-        gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich
-        nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit
-        der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor
-        beschriebenen Art und Weise und zu dem zuvor benannten Zweck
-        einverstanden. Auskunftsrecht Sie haben jederzeit das Recht auf Auskunft
-        über die bezüglich Ihrer Person gespeicherten Daten, deren Herkunft und
-        Empfänger sowie den Zweck der Speicherung. Auskunft über die
-        gespeicherten Daten gibt der Datenschutzbeauftragte. Verweise und Links
-        Bei direkten oder indirekten Verweisen auf fremde Webseiten
-        ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Autors
-        liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in
-        Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm
-        technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger
-        Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum
-        Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu
-        verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige
-        Gestaltung, die Inhalte oder die Urheberschaft der
-        verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb
-        distanziert er sich hiermit ausdrücklich von allen Inhalten aller
-        verlinkten /verknüpften Seiten, die nach der Linksetzung verändert
-        wurden. Diese Feststellung gilt für alle innerhalb des eigenen
-        Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge
-        in vom Autor eingerichteten Gästebüchern, Diskussionsforen,
-        Linkverzeichnissen, Mailinglisten und in allen anderen Formen von
-        Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für
-        illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für
-        Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener
-        Informationen entstehen, haftet allein der Anbieter der Seite, auf
-        welche verwiesen wurde, nicht derjenige, der über Links auf die
-        jeweilige Veröffentlichung lediglich verweist. Weitere Informationen Ihr
-        Vertrauen ist uns wichtig. Daher möchten wir Ihnen jederzeit Rede und
-        Antwort bezüglich der Verarbeitung Ihrer personenbezogenen Daten stehen.
-        Wenn Sie Fragen haben, die Ihnen diese Datenschutzerklärung nicht
-        beantworten konnte oder wenn Sie zu einem Punkt vertiefte Informationen
-        wünschen, wenden Sie sich bitte jederzeit an den
-        Datenschutzbeauftragten.
+        Inc.. Google Analytics verwendet sog. „Cookies“, Textdateien, die auf
+        Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der
+        Website durch Sie ermöglichen. Die durch den Cookie erzeugten
+        Informationen über Ihre Benutzung diese Website (einschließlich Ihrer
+        IP-Adresse) wird an einen Server der Google in den USA übertragen und
+        dort gespeichert. Google wird diese Informationen benutzen, um Ihre
+        Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten
+        für die Websitebetreiber zusammenzustellen und um weitere mit der
+        Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu
+        erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte
+        übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte
+        diese Daten im Auftrag von Google verarbeiten. Google wird in keinem
+        Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen.
+        Sie können die Installation der Cookies durch eine entsprechende
+        Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch
+        darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
+        Funktionen dieser Website voll umfänglich nutzen können. Durch die
+        Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über
+        Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und
+        Weise und zu dem zuvor benannten Zweck einverstanden. Auskunftsrecht Sie
+        haben jederzeit das Recht auf Auskunft über die bezüglich Ihrer Person
+        gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der
+        Speicherung. Auskunft über die gespeicherten Daten gibt der
+        Datenschutzbeauftragte. Verweise und Links Bei direkten oder indirekten
+        Verweisen auf fremde Webseiten (Hyperlinks), die außerhalb des
+        Verantwortungsbereiches des Autors liegen, würde eine
+        Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem
+        der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und
+        zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu
+        verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt
+        der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten
+        erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte
+        oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor
+        keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von
+        allen Inhalten aller verlinkten /verknüpften Seiten, die nach der
+        Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb
+        des eigenen Internetangebotes gesetzten Links und Verweise sowie für
+        Fremdeinträge in vom Autor eingerichteten Gästebüchern,
+        Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen
+        Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich
+        sind. Für illegale, fehlerhafte oder unvollständige Inhalte und
+        insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung
+        solcherart dargebotener Informationen entstehen, haftet allein der
+        Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der
+        über Links auf die jeweilige Veröffentlichung lediglich verweist.
+        Weitere Informationen Ihr Vertrauen ist uns wichtig. Daher möchten wir
+        Ihnen jederzeit Rede und Antwort bezüglich der Verarbeitung Ihrer
+        personenbezogenen Daten stehen. Wenn Sie Fragen haben, die Ihnen diese
+        Datenschutzerklärung nicht beantworten konnte oder wenn Sie zu einem
+        Punkt vertiefte Informationen wünschen, wenden Sie sich bitte jederzeit
+        an den Datenschutzbeauftragten.
       </p>
     </div>
   </div>

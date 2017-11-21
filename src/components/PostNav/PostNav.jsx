@@ -1,34 +1,47 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Link from "gatsby-link";
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
+import Button from 'react-md/lib/Buttons';
 
 const StyledDiv = styled.div`
-  overflow: auto;
-  width: 100%;
-  margin: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
-const StyledDivLeft = styled.div`
-  float: left;
-`;
-const StyledDivRight = styled.div`
-  float: right;
+const StyledDivCenter = styled.div`
+  font-weight: 900;
 `;
 
-class PostNav extends Component {
-  render() {
-    const { prev, next } = this.props;
-    return (
-      <StyledDiv>
-        <StyledDivLeft>
-          {prev != null && <Link to={prev.frontmatter.path}> Prev </Link>}
-        </StyledDivLeft>
-        <StyledDivRight>
-          {next != null && <Link to={next.frontmatter.path}> Next </Link>}
-        </StyledDivRight>
-      </StyledDiv>
-    );
-  }
-}
+const PostNav = (props) => {
+  const { prev, next } = props;
+  return (
+    <StyledDiv>
+      <div>
+        {prev != null && (
+          <Link to={prev.frontmatter.path}>
+            <Button flat> Prev </Button>
+          </Link>
+        )}
+      </div>
+      <StyledDivCenter>
+        <Link to="/blog">
+          <Button flat icon={false} iconClassName="fa fa-list-alt">
+            {' '}
+            Blog{' '}
+          </Button>
+        </Link>
+      </StyledDivCenter>
+      <div>
+        {next != null && (
+          <Link to={next.frontmatter.path}>
+            <Button flat> Next </Button>
+          </Link>
+        )}
+      </div>
+    </StyledDiv>
+  );
+};
 
 export default PostNav;

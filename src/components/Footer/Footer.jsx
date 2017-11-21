@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Footerlinks from "../Footerlinks/Footerlinks";
-import config from "../../../data/SiteConfig";
-import Link from "gatsby-link";
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
+import Footerlinks from '../Footerlinks/Footerlinks';
+import config from '../../../data/SiteConfig';
 
 const Foot = styled.footer`
   padding: 10px 5px 5px 5px;
@@ -44,37 +44,35 @@ const Foot = styled.footer`
   }
 `;
 
-class Footer extends Component {
-  render() {
-    const copyright = config.copyright;
-    if (!copyright) {
-      return null;
-    }
-    return (
-      <Foot>
-        <Footerlinks config={config} />
-        <div className="notice-container">
-          <div className="copyright">
-            <h4>{copyright}</h4>
-          </div>
-          <div className="impressum">
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "#FFF",
-                textAlign: "center",
-                margin: "0"
-              }}
-              to="/impressum"
-            >
-              {" "}
-              Impressum{" "}
-            </Link>
-          </div>
-        </div>
-      </Foot>
-    );
+const Footer = () => {
+  const copyright = config.copyright;
+  if (!copyright) {
+    return null;
   }
-}
+  return (
+    <Foot>
+      <Footerlinks config={config} />
+      <div className="notice-container">
+        <div className="copyright">
+          <h4>{copyright}</h4>
+        </div>
+        <div className="impressum">
+          <Link
+            style={{
+              textDecoration: 'none',
+              color: '#FFF',
+              textAlign: 'center',
+              margin: '0',
+            }}
+            to="/impressum"
+          >
+            {' '}
+            Impressum{' '}
+          </Link>
+        </div>
+      </div>
+    </Foot>
+  );
+};
 
 export default Footer;
