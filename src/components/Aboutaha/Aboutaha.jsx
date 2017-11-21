@@ -18,7 +18,6 @@ const Styledh1 = styled.h1`
 
 const Aboutaha = (props) => {
   const { node: img } = props.titlepic.ahapic[0];
-  console.log(img)
   return (
     <div>
       <Styledh1>Über Aha</Styledh1>

@@ -23,7 +23,5 @@ Blog for aha-plan.de
 # TODO
 * [multi-language!!](https://www.gatsbyjs.org/blog/2017-10-17-building-i18n-with-gatsby/)
 * RSS 
-* favicon 
-* NAVIGATION? 
 * link pdfs
 * tags?

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Impressum = () => (
   <div>
-    <h1>Impressum</h1>
+    <h1>Impressum:</h1>
     <div>
       <ul>
         <li> Achim Hannemann</li>
@@ -107,6 +107,9 @@ const Impressum = () => (
         Punkt vertiefte Informationen wünschen, wenden Sie sich bitte jederzeit
         an den Datenschutzbeauftragten.
       </p>
+    </div>
+    <div>
+     <p>This project is open-source, visit the github <a href="https://github.com/nilutz/aha-plan">repository</a> for more information</p>
     </div>
   </div>
 );
