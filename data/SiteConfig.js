@@ -5,7 +5,7 @@ module.exports = {
   siteLogo: "logos/favicon.png",
   siteKeywords: "Av Media Digital Signage Blog Achim Hannemann",
   siteUrl: "https://aha-plan.de",
-  pathPrefix: "/blog",
+  pathPrefix: "/",
   siteGATrackingID: " UA-62222248-1 ",
   footerLinks: [
     {

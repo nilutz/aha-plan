@@ -29,7 +29,7 @@ export default function ModalTemplate({ data, pathContext }) {
       </div>
       <div style={{ textAlign: 'center', fontWeight: '700', margin: '15px' }}>
         <Link to="/">
-          <Button flat icon={false} href="/" iconClassName="fa fa-home">
+          <Button flat icon={false} iconClassName="fa fa-home">
             {' '}
             Home{' '}
           </Button>

@@ -72,25 +72,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 };
 
-/*
- * Remove trailing slashes
- * from https://github.com/DSchau/blog/blob/master/gatsby-node.js
- */
-exports.onCreatePage = ({ page, boundActionCreators }) => {
-  const { createPage, deletePage } = boundActionCreators;
-
-  return new Promise((resolve) => {
-    const oldPath = page.path;
-    page.path = page.path === '/' ? page.path : page.path.replace(/\/$/, '');
-
-    if (page.path !== oldPath) {
-      deletePage({ path: oldPath });
-      createPage(page);
-    }
-    resolve();
-  });
-};
-
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {
     config.plugin('Lodash', webpackLodashPlugin, null);
