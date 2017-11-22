@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
-import Footerlinks from '../Footerlinks/Footerlinks';
+import Sociallinks from '../Sociallinks/Sociallinks';
 import config from '../../../data/SiteConfig';
 
 const Foot = styled.footer`
@@ -51,7 +51,7 @@ const Footer = () => {
   }
   return (
     <Foot>
-      <Footerlinks config={config} />
+      <Sociallinks config={config} />
       <div className="notice-container">
         <div className="copyright">
           <h4>{copyright}</h4>

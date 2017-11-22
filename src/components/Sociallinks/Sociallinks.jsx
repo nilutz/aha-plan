@@ -17,7 +17,7 @@ const Footerlink = styled.div`
   }
 `;
 
-class Footerlinks extends Component {
+class Sociallinks extends Component {
   getLinkElements() {
     const { footerLinks } = this.props.config;
     const { labeled } = this.props;
@@ -40,4 +40,4 @@ class Footerlinks extends Component {
   }
 }
 
-export default Footerlinks;
+export default Sociallinks;
