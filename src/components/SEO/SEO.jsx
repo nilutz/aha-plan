@@ -14,14 +14,14 @@ const SEO = (props) => {
     title = postNode.frontmatter.title;
     description = postNode.excerpt;
     image = postNode.frontmatter.image;
-    postURL = postPath;
+    postURL = config.siteUrl + postPath;
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
     image = config.siteLogo;
   }
 
-  image = `${config.siteUrl}/${image}`;
+  image = `${config.siteUrl}/static${image}`;
 
   let blogURL;
   if (blog) {

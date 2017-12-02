@@ -21,7 +21,10 @@ const PostNav = (props) => {
       <div>
         {prev != null && (
           <Link to={prev.frontmatter.path}>
-            <Button flat iconClassName="fa fa-arrow-left"> Prev </Button>
+            <Button flat iconClassName="fa fa-arrow-left">
+              {' '}
+              Prev{' '}
+            </Button>
           </Link>
         )}
       </div>
@@ -36,7 +39,10 @@ const PostNav = (props) => {
       <div>
         {next != null && (
           <Link to={next.frontmatter.path}>
-            <Button flat iconBefore={false} iconClassName="fa fa-arrow-right"> Next </Button>
+            <Button flat iconBefore={false} iconClassName="fa fa-arrow-right">
+              {' '}
+              Next{' '}
+            </Button>
           </Link>
         )}
       </div>

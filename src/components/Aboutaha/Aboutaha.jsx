@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
-
 const Styledp = styled.p`
   margin: 15px
   padding-right: 10px;

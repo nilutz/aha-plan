@@ -19,26 +19,36 @@ const StyledDiv = styled.div`
 const Navbar = () => (
   <div
     style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        paddingTop: 0,
-      }}
+      margin: '0 auto',
+      maxWidth: 960,
+      paddingTop: 0,
+    }}
   >
     <StyledDiv>
       <Link to="/">
-        <Button style={{ fontSize: '25px', fontWeight: '700' }}flat icon={false} iconClassName="fa fa-home">
+        <Button
+          style={{ fontSize: '25px', fontWeight: '700' }}
+          flat
+          icon={false}
+          iconClassName="fa fa-home"
+        >
           {' '}
-            Home{' '}
+          Home{' '}
         </Button>
       </Link>
       <Link to="/blog">
-        <Button style={{ fontSize: '25px', fontWeight: '700' }} flat icon={false} iconClassName="fa fa-list-alt">
+        <Button
+          style={{ fontSize: '25px', fontWeight: '700' }}
+          flat
+          icon={false}
+          iconClassName="fa fa-list-alt"
+        >
           {' '}
-            Blog{' '}
+          Blog{' '}
         </Button>
       </Link>
     </StyledDiv>
   </div>
-  );
+);
 
 export default Navbar;

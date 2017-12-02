@@ -59,23 +59,23 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      name: config.siteTitle,
-      short_name: config.siteTitle,
-      description: config.siteDescription,
-      start_url: config.pathPrefix,
-      background_color: '#f7f0eb',
-      theme_color: '#a2466c',
-      display: 'minimal-ui',
-      icons: [
-        {
-          src: 'logos/favicon.png',
-          type: 'image/png',
-          sizes: '16x16',
-        },
-      ],
-    },
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitle,
+        description: config.siteDescription,
+        start_url: config.pathPrefix,
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'minimal-ui',
+        icons: [
+          {
+            src: 'logos/favicon.png',
+            type: 'image/png',
+            sizes: '16x16',
+          },
+        ],
+      },
     },
     'gatsby-plugin-offline',
   ],

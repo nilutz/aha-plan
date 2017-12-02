@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 
 const Impressum = () => (
   <div>
-    <h1>Impressum:</h1>
-    <div>
-      <ul>
-        <li> Achim Hannemann</li>
-        <li> Sonneck 38</li>
-        <li> 63762 Großostheim</li>
-        <li> +49 157 300 928 90</li>
-        <li> aha1959 at aol.com</li>
-        <li> aha-plan.de</li>
-      </ul>
+    <div className="md-cell md-cell--12">
+      <h1>Impressum:</h1>
+      <div>
+        <ul>
+          <li> Achim Hannemann</li>
+          <li> Sonneck 38</li>
+          <li> 63762 Großostheim</li>
+          <li> +49 157 300 928 90</li>
+          <li> aha1959 at aol.com</li>
+          <li> aha-plan.de</li>
+        </ul>
+      </div>
     </div>
-    <div>
+    <div className="md-cell md-cell--12">
       <h4>Datenschutzerklärung</h4>
       <p>
         Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns
@@ -108,8 +110,13 @@ const Impressum = () => (
         an den Datenschutzbeauftragten.
       </p>
     </div>
-    <div>
-     <p>This project is open-source, visit the github <a href="https://github.com/nilutz/aha-plan">repository</a> for more information</p>
+    <div className="md-cell md-cell--12">
+      <h4>Open Source</h4>
+      <p>
+        This project is open-source, visit the github{" "}
+        <a href="https://github.com/nilutz/aha-plan">repository</a> for more
+        information
+      </p>
     </div>
   </div>
 );

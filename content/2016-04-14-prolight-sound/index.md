@@ -5,7 +5,7 @@ date: '2016-04-14'
 tags:
   - av
   - ise
-image: img/pls2016.jpg
+image: /pls2016.jpg
 ---
 
 Hier die Übersicht zu den ausgewählten Beiträgen und ganz unten der Link zu allen Beiträgen:

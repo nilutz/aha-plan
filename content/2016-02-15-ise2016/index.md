@@ -5,7 +5,7 @@ date: '2016-02-25'
 tags:
   - av
   - ise
-image: img/ise2017.jpeg
+image: /ise.jpg
 ---
 
 Karneval fällt bei mir dieses Jahr aus, denn die ISE 2016 steht vor der Tür.

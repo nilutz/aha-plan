@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import Header from '../components/Header/Header';
-import Navbar from '../components/Navbar/Navbar';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 
-import Footer from '../components/Footer/Footer';
-import config from '../../data/SiteConfig';
+import Footer from "../components/Footer/Footer";
+import config from "../../data/SiteConfig";
 
-import './index.scss';
+import "./index.scss";
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -23,9 +23,9 @@ const TemplateWrapper = ({ children }) => (
 
     <div
       style={{
-        margin: '0 auto',
+        margin: "0 auto",
         maxWidth: 960,
-        paddingTop: 0,
+        paddingTop: 0
       }}
     >
       {children()}
@@ -35,7 +35,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 };
 
 export default TemplateWrapper;

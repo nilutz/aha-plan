@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 const StyledLink = styled(Link)`
   font-size: 27px;
   font-weight: 500;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.64);
-  overflow: hidden;
-  white-space: nowrap;
 `;
 
 const StyledSubheader = styled.h5`
@@ -34,14 +33,28 @@ const StyledRaquo = styled(Link)`
 
 const Preview = (props) => {
   const { post } = props;
+  const { cover } = props;
+  const coverElem = cover[0];
+  const isCover = coverElem === undefined;
 
   return (
     <Container>
       <div className="Preview md-grid">
-        <div className="md-cell--4">
-          <img src={post.frontmatter.image} alt="" />
+        <div className="md-cell md-cell--4">
+          <Link to={post.frontmatter.path}>
+            {isCover ? (
+              <img src={post.frontmatter.image} alt="" />
+            ) : (
+              <Img
+                sizes={coverElem.sizes}
+                src={coverElem.sizes.src}
+                srcSet={coverElem.sizes.srcSet}
+                alt=""
+              />
+            )}
+          </Link>
         </div>
-        <div className="md-cell--8">
+        <div className="md-cell md-cell--8">
           <StyledLink to={post.frontmatter.path}>
             {post.frontmatter.title}
           </StyledLink>

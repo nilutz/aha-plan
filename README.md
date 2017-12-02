@@ -11,7 +11,7 @@ Blog for aha-plan.de
 - [markdown][markdown]
   - Each and every post is authored in Markdown parsed by [remark][remark]
 - [react-md][react-md]
-  - react material ui
+  - React Material ui
 
 [gatsby]: https://github.com/gatsbyjs/gatsby
 [styled-components]: https://github.com/styled-components/styled-components

@@ -15,7 +15,7 @@ const StyledTitle = styled.h1`
   font-weight: 300;
 `;
 const StyledSubTitle = styled.h6`
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-size: 14px;
   font-weight: 200;
 `;
@@ -24,17 +24,15 @@ const Styleddiv = styled.div`
   text-align: justify;
   font-size: 18px;
   font-weight: 300;
-  
+
   p {
     font-size: 18px;
     font-weight: 300;
   }
 
-  ul li{
-
+  ul li {
     font-size: 18px;
     font-weight: 300;
-
   }
 `;
 
@@ -46,22 +44,27 @@ export default function BlogTemplate({ data, pathContext }) {
     <div>
       <Helmet>
         <title>{`${post.frontmatter.title} | ${config.siteTitle}`}</title>
-        <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
+        <link
+          rel="canonical"
+          href={`${config.siteUrl}${post.frontmatter.path}`}
+        />
       </Helmet>
       <SEO postPath={post.frontmatter.path} postNode={post} blog postSEO />
-      <StyledTitle> {post.frontmatter.title} </StyledTitle>
-      <StyledSubTitle>
-        von Achim Hannemann am {post.frontmatter.date}{' '}
-      </StyledSubTitle>
-      <Separator />
-      <Styleddiv
-        className="item-html"
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-
-      <Separator />
-
-      <PostNav prev={prev} next={next} />
+      <div className="md-cell md-cell--12">
+        <StyledTitle> {post.frontmatter.title} </StyledTitle>
+        <StyledSubTitle>
+          von Achim Hannemann am {post.frontmatter.date}{' '}
+        </StyledSubTitle>
+        <Separator />
+      </div>
+      <div className="md-cell md-cell--12">
+        <Styleddiv
+          className="item-html"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+        <Separator />
+        <PostNav prev={prev} next={next} />
+      </div>
     </div>
   );
 }
@@ -72,10 +75,10 @@ export const postQuery = graphql`
       html
       excerpt(pruneLength: 100)
       frontmatter {
-        path
-        date(formatString: "MMMM DD, YYYY")
-        image
         title
+        date(formatString: "MMMM DD, YYYY")
+        path
+        image
       }
     }
   }

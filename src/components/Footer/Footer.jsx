@@ -63,11 +63,12 @@ const Footer = () => {
               color: '#FFF',
               textAlign: 'center',
               margin: '0',
+              marginRight: '5px',
             }}
             to="/impressum"
           >
             {' '}
-            Impressum{' '}
+            Impressum & Datenschutz{' '}
           </Link>
         </div>
       </div>
