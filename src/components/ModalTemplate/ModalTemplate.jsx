@@ -15,7 +15,7 @@ const Styledh1 = styled.h1`
 export default function ModalTemplate({ data, pathContext }) {
   const { edges: imgs } = data.allImageSharp;
   const { id: title } = pathContext;
-  const head = _.upperFirst(title);
+  const head = _.upperFirst(_.startCase(title));
 
   return (
     <div>
@@ -45,7 +45,7 @@ export const indexQuery = graphql`
       edges {
         node {
           ... on ImageSharp {
-            sizes(maxWidth: 460) {
+            sizes(maxWidth: 400) {
               ...GatsbyImageSharpSizes
             }
           }

@@ -11,7 +11,6 @@ import SEO from "../components/SEO/SEO";
 export default function IndexPage({ data }) {
   const { edges: imgs } = data.middle;
   const { edges: ahapic } = data.aha;
-  const { edges: paths } = data.paths;
 
   return (
     <div className="md-cell md-cell--12">
@@ -23,7 +22,7 @@ export default function IndexPage({ data }) {
       <h1 style={{ textAlign: "center" }}> Projekte </h1>
       <GridList container="pictures" size={3} component="section">
         {imgs.map(({ node: img }, index) => {
-          const path = paths[index].node.name;
+          const path = img.sizes.originalName.slice(0,-4)
           return (
             <Card key={img.id}>
               <Link style={{ textDecoration: "none" }} to={path}>
@@ -54,13 +53,6 @@ export const indexQuery = graphql`
       edges {
         node {
           ...Img_details
-        }
-      }
-    }
-    paths: allFile(filter: { id: { regex: "/portfolio/middle/" } }) {
-      edges {
-        node {
-          name
         }
       }
     }
