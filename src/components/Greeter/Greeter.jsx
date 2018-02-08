@@ -1,9 +1,10 @@
 import 'font-awesome/scss/font-awesome.scss';
-
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 import Separator from '../Separator/Separator';
+import { translate } from "react-i18next";
+
 
 const StyledContainerDiv = styled.div`
   margin-top: 40px;
@@ -33,32 +34,31 @@ const Stylei = styled.i`
   font-weight: 300;
 `;
 
-const Greeter = () => (
+const Greeter = (props) => {
+
+  const {t} = props;
+  return(
   <StyledContainerDiv>
     <Styledh1>
-      AHa-Plan nimmt sich zum Ziel Kundenwünsche und Technikwissen zu vereinen,
-      um die bestmögliche Realisierung ihres AV, Medien oder Digital Signage
-      Projektes zu verwirklichen.
+      {t("heading")}
     </Styledh1>
     <Separator />
-    <Styledh3> Die Aufgabenfelder: </Styledh3>
+    <Styledh3> {t("subheading1")} </Styledh3>
     <div className="md-grid">
       <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
         <Stylei className="fa fa-pencil" style={{ marginBottom: ' 10px' }} />
-        <Styledh3> AV, Medien Planung </Styledh3>
+        <Styledh3> {t("subheading2")} </Styledh3>
         <Styledh4>
-          Medientechnikplanung für Licht, Audio und Video für Veranstaltungs-
-          und Konferenzräume
+          {t("description2")}
         </Styledh4>
       </div>
       <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
         <Styledp>
           <Stylei className="fa fa-desktop" style={{ marginBottom: ' 10px' }} />
         </Styledp>
-        <Styledh3> Displays</Styledh3>
+        <Styledh3> {t("subheading3")}</Styledh3>
         <Styledh4>
-          Entwicklung, Konstruktion und Planung von Displays für verschiedenste
-          Einsatzbereiche
+          {t("description3")}
         </Styledh4>
       </div>
       <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
@@ -67,15 +67,15 @@ const Greeter = () => (
             className="fa fa-list-alt"
             style={{ marginBottom: ' 10px' }}
           />
-          <Styledh3> Redakteur</Styledh3>
+          <Styledh3> {t("subheading4")}</Styledh3>
         </Link>
         <Styledh4>
-          Schreiben, Recherchen, Analysen und Veröffentlichungen über den
-          Digital Signage Markt
+          {t("description4")}
         </Styledh4>
       </div>
     </div>
   </StyledContainerDiv>
-);
+  )
+};
 
-export default Greeter;
+export default translate("Greeter")(Greeter);

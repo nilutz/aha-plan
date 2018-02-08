@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { translate } from "react-i18next";
+import _ from 'lodash';
 
 const Styledh1 = styled.h1`
   text-align: center;
@@ -16,69 +18,38 @@ const Styledli = styled.li`
   font-weight: 300;
 `;
 
-const Awardsaha = () => (
+const Awardsaha = (props) => {
+  
+  const {t} = props;
+
+
+  return(
   <div>
-    <Styledh1>Patente und Referenzen</Styledh1>
+    <Styledh1>{t("heading")}</Styledh1>
     <div className="md-grid">
       <div className="md-cell md-cell--12">
-        <Styledh4>Patente:</Styledh4>
+        <Styledh4>{t("subheading1")}</Styledh4>
         <ul style={{ listStyle: 'none', textAlign: 'center' }}>
-          <Styledli>Infoscreen Tower - 1998 </Styledli>
-          <Styledli>Sunlight Display Gebrauchsmuster - 2007</Styledli>
-          <Styledli>Sunlight Screen Markenname - 2008</Styledli>
-          <Styledli>Sunlight Steele Geschmacksmuster - 2009 </Styledli>
-          <Styledli>Displaykühlung Gebrauchsmuster - 2009</Styledli>
-          <Styledli>Solar Display Gebrauchsmuster - 2010</Styledli>
-          <Styledli>Solar Display Gebrauchsmuster - 2012</Styledli>
-          <Styledli>Sunlight Screen EU Patent - 2013</Styledli>
+          {_.map(t('description1', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) } 
         </ul>
       </div>
     </div>
     <div className="md-grid">
       <div className="md-cell md-cell--6">
-        <Styledh4>Entwicklung:</Styledh4>
+        <Styledh4>{t("subheading2")}</Styledh4>
         <ul style={{ textAlign: 'left' }}>
-          <Styledli>1. Großbildprojektors mit 6500A Lumen und FHD. </Styledli>
-          <Styledli>
-            360 °Projektion sowie 3D Projektion, Rückprojektionen
-          </Styledli>
-          <Styledli>
-            U-Bahnhöfe für Stroer+, Großbildtower-Infoscreen für ICE- Bahnhöfe.
-            Centralscreens mit steglos Plasma+ LCD
-          </Styledli>
-          <Styledli>Lens shift Technologie und Scaler </Styledli>
-          <Styledli>Displays für jede KStyledlimazone</Styledli>
-          <Styledli>
-            Sunlight Display für Innen und Außen Entwicklung von Solar
-            Display(TV ohne Strom)
-          </Styledli>
-          <Styledli>Entwicklung von Kühlkonzepten für Displays</Styledli>
-          <Styledli>Stelen und Displaysäulen</Styledli>
+          {_.map(t('description2', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) }  
         </ul>
       </div>
       <div className="md-cell md-cell--6">
-        <Styledh4>Planung:</Styledh4>
+        <Styledh4>{t("subheading3")}</Styledh4>
         <ul style={{ textAlign: 'left' }}>
-          <Styledli>Fifa Football Globe, Cocoon Club </Styledli>
-          <Styledli>Audi Forum Ingolstadt+Neckarsulm, ADEC-Neuburg</Styledli>
-          <Styledli>Div. digitale TV Brodcast Sender, Leitwarte-ESA </Styledli>
-          <Styledli>LED Videowand für Telekom </Styledli>
-          <Styledli>
-            Roll Out: Sunlight Displays: Telekom, Dt.Bank, T-Mobile{' '}
-          </Styledli>
-          <Styledli>
-            9er Sunlight Outdoor Monitor für Standorte in CH-Skigebiete
-          </Styledli>
-          <Styledli>Premierministeramt-China</Styledli>
-          <Styledli>3D-Kino-USA</Styledli>
-          <Styledli>Aufbau Europavertriebnetz für Hughes – JVC</Styledli>
-          <Styledli>
-            Projekte in Europa, Indien, Singapore, USA, Südamerika, Asien...
-          </Styledli>
+          {_.map(t('description3', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) }  
         </ul>
       </div>
     </div>
   </div>
-);
+  )
+};
 
-export default Awardsaha;
+export default translate("Awardsaha")(Awardsaha);

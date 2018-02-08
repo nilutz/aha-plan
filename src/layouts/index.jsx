@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
+
+import i18n from "../components/i18ncomponent/i18ncomponent";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
-
 import Footer from "../components/Footer/Footer";
-import config from "../../data/SiteConfig";
 
+import config from "../../data/SiteConfig";
 import "./index.scss";
 
 const TemplateWrapper = ({ children }) => (
@@ -27,7 +28,7 @@ const TemplateWrapper = ({ children }) => (
         maxWidth: 960,
         paddingTop: 0
       }}
-    >
+    >    
       {children()}
     </div>
     <Footer />

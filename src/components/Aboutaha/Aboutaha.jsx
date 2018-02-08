@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Component } from "react";
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+import { translate } from "react-i18next";
+
 
 const Styledp = styled.p`
   margin: 15px
@@ -16,20 +18,15 @@ const Styledh1 = styled.h1`
 `;
 
 const Aboutaha = (props) => {
-  const { node: img } = props.titlepic.ahapic[0];
+    const {t} = props;
+    const { node: img } = props.titlepic.ahapic[0];
   return (
     <div>
-      <Styledh1>Über Aha</Styledh1>
+      <Styledh1>{t("heading")}</Styledh1>
       <div className="md-grid">
         <div className="md-cell md-cell--8">
           <Styledp>
-            In einem Team aus Ingenieuren, Entwicklern und ehemaligen System
-            Integratoren planen wir Projekte im Bereich Medientechnik und
-            Digital Signage. Für unsere namhaften Kunden übernehmen wir auch das
-            Projektmanagement, die Rollout Planung, die Bauüberwachung und
-            Bauleitung bis zur Abnahme. Nach ihren Anforderungen erarbeiten wir
-            Audiovisuelle Kommunikationslösungen, machen Designvorschläge und
-            entwickeln neue technische Lösungen.
+           {t("description")}
           </Styledp>
         </div>
         <div className="md-cell md-cell--4">
@@ -43,4 +40,4 @@ const Aboutaha = (props) => {
   );
 };
 
-export default Aboutaha;
+export default translate("Aboutaha")(Aboutaha);

@@ -1,5 +1,6 @@
 const path = require('path');
 const _ = require('lodash');
+const fs = require("fs-extra");
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -70,6 +71,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
     return posts;
   });
+};
+
+exports.onPostBuild = () => {
+  console.log("Copying locales");
+  fs.copySync(
+    path.join(__dirname, "/src/locales"),
+    path.join(__dirname, "/public/locales")
+  );
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
