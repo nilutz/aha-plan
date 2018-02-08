@@ -47,19 +47,14 @@ class LanguageSwitcher extends Component {
 
     return (
       <MenuButton
-        className="LanguageSwitcher"
+        className="LanguageSwitcher md-cell md-cell--2-tablet"
         id="language_button-3"
         style={{ fontSize: '25px', fontWeight: '700' }}
         menuItems={languages.map(language =>
           this.renderLanguageChoice(language))}
-        listInline
         iconClassName="fa fa-language"
         flat
         centered
-        anchor={{
-          x: MenuButton.HorizontalAnchors.INNER_LEFT,
-          y: MenuButton.VerticalAnchors.BOTTOM,
-        }}
       >
         ES/EN/DE
       </MenuButton>

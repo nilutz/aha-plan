@@ -24,8 +24,8 @@ const Navbar = () => (
       paddingTop: 0,
     }}
   >
-    <StyledDiv>
-      <Link to="/">
+    <StyledDiv className='md-grid'>
+      <Link to="/" className='md-cell md-cell--2-tablet'>
         <Button
           style={{ fontSize: '25px', fontWeight: '700' }}
           flat
@@ -36,7 +36,7 @@ const Navbar = () => (
           Home{' '}
         </Button>
       </Link>
-      <Link to="/blog">
+      <Link to="/blog" className='md-cell md-cell--2-tablet'>
         <Button
           style={{ fontSize: '25px', fontWeight: '700' }}
           flat
