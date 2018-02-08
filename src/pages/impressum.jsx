@@ -113,7 +113,8 @@ const Impressum = () => (
     <div className="md-cell md-cell--12">
       <h4>Open Source</h4>
       <p>
-        This website is open-source, visit the github <a href="https://github.com/nilutz/aha-plan">repository</a> for more
+        This website is open-source, visit the github{" "}
+        <a href="https://github.com/nilutz/aha-plan">repository</a> for more
         information.
       </p>
     </div>

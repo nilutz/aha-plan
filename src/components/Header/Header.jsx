@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Background from './bg_fifa.jpg'
+import Background from './bg_fifa.jpg';
 
 const Head = styled.header`
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ const Headh4 = styled.h4`
 `;
 
 const Header = () => (
-  <Head style={{backgroundImage: "url(" + Background+ ")"}}>
+  <Head style={{ backgroundImage: `url(${Background})` }}>
     <Overlay>
       <Headh1> AHa-Plan</Headh1>
       <Headh4> AV - Medien - Digital Signage </Headh4>

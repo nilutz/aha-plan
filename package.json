@@ -4,7 +4,9 @@
   "version": "2.0.0",
   "author": "Nilutz",
   "dependencies": {
+    "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
+    "fs-extra": "^5.0.0",
     "gatsby": "^1.9.74",
     "gatsby-image": "^1.0.13",
     "gatsby-link": "^1.6.22",

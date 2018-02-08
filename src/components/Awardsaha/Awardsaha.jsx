@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { translate } from "react-i18next";
+import { translate } from 'react-i18next';
 import _ from 'lodash';
 
 const Styledh1 = styled.h1`
@@ -19,37 +19,35 @@ const Styledli = styled.li`
 `;
 
 const Awardsaha = (props) => {
-  
-  const {t} = props;
+  const { t } = props;
 
-
-  return(
-  <div>
-    <Styledh1>{t("heading")}</Styledh1>
-    <div className="md-grid">
-      <div className="md-cell md-cell--12">
-        <Styledh4>{t("subheading1")}</Styledh4>
-        <ul style={{ listStyle: 'none', textAlign: 'center' }}>
-          {_.map(t('description1', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) } 
-        </ul>
+  return (
+    <div>
+      <Styledh1>{t('heading')}</Styledh1>
+      <div className="md-grid">
+        <div className="md-cell md-cell--12">
+          <Styledh4>{t('subheading1')}</Styledh4>
+          <ul style={{ listStyle: 'none', textAlign: 'center' }}>
+            {_.map(t('description1', { returnObjects: true }), (item, key) => <Styledli key={key}> {item}</Styledli>)}
+          </ul>
+        </div>
+      </div>
+      <div className="md-grid">
+        <div className="md-cell md-cell--6">
+          <Styledh4>{t('subheading2')}</Styledh4>
+          <ul style={{ textAlign: 'left' }}>
+            {_.map(t('description2', { returnObjects: true }), (item, key) => <Styledli key={key}> {item}</Styledli>)}
+          </ul>
+        </div>
+        <div className="md-cell md-cell--6">
+          <Styledh4>{t('subheading3')}</Styledh4>
+          <ul style={{ textAlign: 'left' }}>
+            {_.map(t('description3', { returnObjects: true }), (item, key) => <Styledli key={key}> {item}</Styledli>)}
+          </ul>
+        </div>
       </div>
     </div>
-    <div className="md-grid">
-      <div className="md-cell md-cell--6">
-        <Styledh4>{t("subheading2")}</Styledh4>
-        <ul style={{ textAlign: 'left' }}>
-          {_.map(t('description2', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) }  
-        </ul>
-      </div>
-      <div className="md-cell md-cell--6">
-        <Styledh4>{t("subheading3")}</Styledh4>
-        <ul style={{ textAlign: 'left' }}>
-          {_.map(t('description3', { returnObjects: true }), (item, key) => {return <Styledli key={key}> {item}</Styledli>}) }  
-        </ul>
-      </div>
-    </div>
-  </div>
-  )
+  );
 };
 
-export default translate("Awardsaha")(Awardsaha);
+export default translate('Awardsaha')(Awardsaha);

@@ -22,7 +22,7 @@ export default function IndexPage({ data }) {
       <h1 style={{ textAlign: "center" }}> Projekte </h1>
       <GridList container="pictures" size={3} component="section">
         {imgs.map(({ node: img }, index) => {
-          const path = img.sizes.originalName.slice(0,-4)
+          const path = img.sizes.originalName.slice(0, -4);
           return (
             <Card key={img.id}>
               <Link style={{ textDecoration: "none" }} to={path}>

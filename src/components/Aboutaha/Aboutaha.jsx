@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import { translate } from "react-i18next";
-
+import { translate } from 'react-i18next';
 
 const Styledp = styled.p`
   margin: 15px
@@ -18,16 +17,14 @@ const Styledh1 = styled.h1`
 `;
 
 const Aboutaha = (props) => {
-    const {t} = props;
-    const { node: img } = props.titlepic.ahapic[0];
+  const { t } = props;
+  const { node: img } = props.titlepic.ahapic[0];
   return (
     <div>
-      <Styledh1>{t("heading")}</Styledh1>
+      <Styledh1>{t('heading')}</Styledh1>
       <div className="md-grid">
         <div className="md-cell md-cell--8">
-          <Styledp>
-           {t("description")}
-          </Styledp>
+          <Styledp>{t('description')}</Styledp>
         </div>
         <div className="md-cell md-cell--4">
           <Img
@@ -40,4 +37,4 @@ const Aboutaha = (props) => {
   );
 };
 
-export default translate("Aboutaha")(Aboutaha);
+export default translate('Aboutaha')(Aboutaha);

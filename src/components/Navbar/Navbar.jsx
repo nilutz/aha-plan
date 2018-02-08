@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 import Button from 'react-md/lib/Buttons';
 
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 // const StyledDiv = styled.div`
 //   display: flex;
 //   justify-content: space-between;
@@ -48,7 +48,6 @@ const Navbar = () => (
         </Button>
       </Link>
       <LanguageSwitcher />
-
     </StyledDiv>
   </div>
 );
