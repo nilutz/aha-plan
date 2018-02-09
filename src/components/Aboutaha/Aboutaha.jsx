@@ -23,10 +23,10 @@ const Aboutaha = (props) => {
     <div>
       <Styledh1>{t('heading')}</Styledh1>
       <div className="md-grid">
-        <div className="md-cell md-cell--8">
+        <div className="md-cell md-cell--8 md-cell--5-tablet md-cell--4-phone">
           <Styledp>{t('description')}</Styledp>
         </div>
-        <div className="md-cell md-cell--4">
+        <div className="md-cell md-cell--4 md-cell--3-tablet md-cell--4-phone">
           <Img
             resolutions={img.resolutions}
             style={{ display: 'block', margin: 'auto', borderRadius: '50%' }}

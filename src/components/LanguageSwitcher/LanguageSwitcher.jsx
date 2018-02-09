@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { translate } from 'react-i18next';
-import {ListItem, MenuButton } from 'react-md';
+import { ListItem, MenuButton } from 'react-md';
 
 class LanguageSwitcher extends Component {
   constructor(props) {
@@ -47,13 +47,14 @@ class LanguageSwitcher extends Component {
 
     return (
       <MenuButton
-        className="LanguageSwitcher md-cell md-cell--2-tablet"
+        className="LanguageSwitcher"
         id="language_button-3"
         style={{ fontSize: '25px', fontWeight: '700' }}
         menuItems={languages.map(language =>
           this.renderLanguageChoice(language))}
         iconClassName="fa fa-language"
         flat
+        fullWidth
         centered
       >
         ES/EN/DE

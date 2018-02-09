@@ -5,15 +5,24 @@ import Link from 'gatsby-link';
 import Button from 'react-md/lib/Buttons';
 
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
-// const StyledDiv = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-// `;
-const StyledDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+const StyledLinkLeft = styled(Link)`
+  text-align:left;
+  @media only screen and (max-width: 600px) {
+      text-align:left;
+}
+`;
+const StyledLinkCenter = styled(Link)`
+  text-align:center;
+  @media only screen and (max-width: 600px) {
+      text-align:left;
+}
+`;
+const StyledDivRight = styled.div`
+  text-align:right;
+  @media only screen and (max-width: 600px) {
+      text-align:left;
+}
 `;
 
 const Navbar = () => (
@@ -24,8 +33,8 @@ const Navbar = () => (
       paddingTop: 0,
     }}
   >
-    <StyledDiv className='md-grid'>
-      <Link to="/" className='md-cell md-cell--2-tablet'>
+    <div className="md-grid">
+      <StyledLinkLeft to="/" className="md-cell md-cell--4-desktop md-cell--2-tablet md-cell--4-phone">
         <Button
           style={{ fontSize: '25px', fontWeight: '700' }}
           flat
@@ -35,8 +44,8 @@ const Navbar = () => (
           {' '}
           Home{' '}
         </Button>
-      </Link>
-      <Link to="/blog" className='md-cell md-cell--2-tablet'>
+      </StyledLinkLeft>
+      <StyledLinkCenter to="/blog" className="md-cell md-cell--4-desktop md-cell--4-tablet md-cell--4-phone">
         <Button
           style={{ fontSize: '25px', fontWeight: '700' }}
           flat
@@ -46,9 +55,11 @@ const Navbar = () => (
           {' '}
           Blog{' '}
         </Button>
-      </Link>
-      <LanguageSwitcher />
-    </StyledDiv>
+      </StyledLinkCenter>
+      <StyledDivRight className="md-cell md-cell--4-desktop md-cell--2-tablet md-cell--4-phone md-cell--right">
+        <LanguageSwitcher />
+      </StyledDivRight>
+    </div>
   </div>
 );
 

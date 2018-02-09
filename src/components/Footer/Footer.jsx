@@ -4,75 +4,47 @@ import Link from 'gatsby-link';
 import Sociallinks from '../Sociallinks/Sociallinks';
 import config from '../../../data/SiteConfig';
 
-const Foot = styled.footer`
-  padding: 10px 5px 5px 5px;
-
-  justify-content: center;
-  align-content: center;
-  background-color: #ffb74d;
-
-  .notice-container {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    margin-top: 25px;
-
-    .copyright {
-      display: flex;
-      flex: 1;
-      justify-content: flex-start;
-
-      @media (max-width: 640px - 1px) {
-        justify-content: center;
-      }
-    }
-
-    .impressum {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      @media (max-width: 640px - 1px) {
-        justify-content: center;
-      }
-    }
-
-    h4 {
-      color: #fff;
-      text-align: center;
-      margin: 0;
-    }
-  }
-`;
-
 const Footer = () => {
   const copyright = config.copyright;
   if (!copyright) {
     return null;
   }
   return (
-    <Foot>
-      <Sociallinks config={config} />
-      <div className="notice-container">
-        <div className="copyright">
-          <h4>{copyright}</h4>
-        </div>
-        <div className="impressum">
-          <Link
-            style={{
-              textDecoration: 'none',
-              color: '#FFF',
-              textAlign: 'center',
-              margin: '0',
-              marginRight: '5px',
-            }}
-            to="/impressum"
+    <div style={{ backgroundColor: '#ffb74d' }}>
+      <div
+        style={{
+          margin: '0 auto',
+          maxWidth: 960,
+          paddingTop: 0,
+        }}
+      >
+        <Sociallinks config={config} />
+        <div className="notice-container md-grid ">
+          <div className="copyright md-cell md-cell--2-phone" style={{ margin: '0' }}>
+            <h4>{copyright}</h4>
+          </div>
+          <div
+            className="impressum md-cell--right md-cell--2-phone"
+            style={{ textAlign: 'right' }}
           >
-            {' '}
+            <Link
+              style={{
+              textDecoration: 'none',
+              color: '#000',
+              textAlign: 'center',
+              fontSize: '15px',
+              justifyContent: 'right',
+              lineHeight: '28px',
+            }}
+              to="/impressum"
+            >
+              {' '}
             Impressum & Datenschutz{' '}
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
-    </Foot>
+    </div>
   );
 };
 
