@@ -24,7 +24,7 @@ export default function IndexPage({ data }) {
         {imgs.map(({ node: img }, index) => {
           const path = img.sizes.originalName.slice(0, -4);
           return (
-            <Card key={img.id} className='md-cell--4-tablet md-cell--2-phone'>
+            <Card key={img.id} className="md-cell--4-tablet md-cell--2-phone">
               <Link style={{ textDecoration: "none" }} to={path}>
                 <Media aspectRatio="1-1">
                   <Img

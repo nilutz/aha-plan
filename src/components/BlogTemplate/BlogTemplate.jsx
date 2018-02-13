@@ -1,12 +1,12 @@
-import 'font-awesome/scss/font-awesome.scss';
+import "font-awesome/scss/font-awesome.scss";
 
-import React from 'react';
-import styled from 'styled-components';
-import Helmet from 'react-helmet';
-import Separator from '../Separator/Separator';
-import PostNav from '../PostNav/PostNav';
-import SEO from '../SEO/SEO';
-import config from '../../../data/SiteConfig';
+import React from "react";
+import styled from "styled-components";
+import Helmet from "react-helmet";
+import Separator from "../Separator/Separator";
+import PostNav from "../PostNav/PostNav";
+import SEO from "../SEO/SEO";
+import config from "../../../data/SiteConfig";
 
 const StyledTitle = styled.h1`
   margin-top:20px;
@@ -53,7 +53,7 @@ export default function BlogTemplate({ data, pathContext }) {
       <div className="md-cell md-cell--12">
         <StyledTitle> {post.frontmatter.title} </StyledTitle>
         <StyledSubTitle>
-          von Achim Hannemann am {post.frontmatter.date}{' '}
+          von Achim Hannemann am {post.frontmatter.date}{" "}
         </StyledSubTitle>
         <Separator />
       </div>

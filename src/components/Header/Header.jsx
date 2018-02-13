@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Background from './bg_fifa.jpg';
+import React from "react";
+import styled from "styled-components";
+import Background from "./bg_fifa.jpg";
 
 const Head = styled.header`
   background-repeat: no-repeat;

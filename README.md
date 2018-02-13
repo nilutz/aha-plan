@@ -24,7 +24,7 @@ Blog for aha-plan.de
 
 
 # TODO
-* meta tags langauges
+* meta tags languages
 * RSS 
 * link pdfs
 * tags?

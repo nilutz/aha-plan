@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
+import Img from "gatsby-image";
 
 const StyledLink = styled(Link)`
   font-size: 27px;
@@ -31,7 +31,7 @@ const StyledRaquo = styled(Link)`
   text-decoration: none;
 `;
 
-const Preview = (props) => {
+const Preview = props => {
   const { post } = props;
   const { cover } = props;
   const coverElem = cover[0];
@@ -60,7 +60,7 @@ const Preview = (props) => {
           </StyledLink>
           <StyledSubheader>{post.frontmatter.date}</StyledSubheader>
           <StyledP>
-            {post.excerpt}{' '}
+            {post.excerpt}{" "}
             <StyledRaquo to={post.frontmatter.path}>&raquo;</StyledRaquo>
           </StyledP>
         </div>

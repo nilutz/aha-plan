@@ -1,10 +1,10 @@
-import 'font-awesome/scss/font-awesome.scss';
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
-import { translate } from 'react-i18next';
+import "font-awesome/scss/font-awesome.scss";
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
+import { translate } from "react-i18next";
 
-import Separator from '../Separator/Separator';
+import Separator from "../Separator/Separator";
 
 const StyledContainerDiv = styled.div`
   margin-top: 40px;
@@ -34,42 +34,42 @@ const Stylei = styled.i`
   font-weight: 300;
 `;
 
-const Greeter = (props) => {
+const Greeter = props => {
   const { t } = props;
   return (
     <StyledContainerDiv>
-      <Styledh1>{t('heading')}</Styledh1>
+      <Styledh1>{t("heading")}</Styledh1>
       <Separator />
-      <Styledh3> {t('subheading1')} </Styledh3>
+      <Styledh3> {t("subheading1")} </Styledh3>
       <div className="md-grid">
-        <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
-          <Stylei className="fa fa-pencil" style={{ marginBottom: ' 10px' }} />
-          <Styledh3> {t('subheading2')} </Styledh3>
-          <Styledh4>{t('description2')}</Styledh4>
+        <div className="md-cell md-cell--4" style={{ textAlign: "center" }}>
+          <Stylei className="fa fa-pencil" style={{ marginBottom: " 10px" }} />
+          <Styledh3> {t("subheading2")} </Styledh3>
+          <Styledh4>{t("description2")}</Styledh4>
         </div>
-        <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
+        <div className="md-cell md-cell--4" style={{ textAlign: "center" }}>
           <Styledp>
             <Stylei
               className="fa fa-desktop"
-              style={{ marginBottom: ' 10px' }}
+              style={{ marginBottom: " 10px" }}
             />
           </Styledp>
-          <Styledh3> {t('subheading3')}</Styledh3>
-          <Styledh4>{t('description3')}</Styledh4>
+          <Styledh3> {t("subheading3")}</Styledh3>
+          <Styledh4>{t("description3")}</Styledh4>
         </div>
-        <div className="md-cell md-cell--4" style={{ textAlign: 'center' }}>
-          <Link style={{ textDecoration: 'none' }} to="/blog">
+        <div className="md-cell md-cell--4" style={{ textAlign: "center" }}>
+          <Link style={{ textDecoration: "none" }} to="/blog">
             <Stylei
               className="fa fa-list-alt"
-              style={{ marginBottom: ' 10px' }}
+              style={{ marginBottom: " 10px" }}
             />
-            <Styledh3> {t('subheading4')}</Styledh3>
+            <Styledh3> {t("subheading4")}</Styledh3>
           </Link>
-          <Styledh4>{t('description4')}</Styledh4>
+          <Styledh4>{t("description4")}</Styledh4>
         </div>
       </div>
     </StyledContainerDiv>
   );
 };
 
-export default translate('Greeter')(Greeter);
+export default translate("Greeter")(Greeter);

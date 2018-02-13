@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-import { translate } from 'react-i18next';
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
+import { translate } from "react-i18next";
 
 const Styledp = styled.p`
   margin: 15px
@@ -16,20 +16,20 @@ const Styledh1 = styled.h1`
   text-align: center;
 `;
 
-const Aboutaha = (props) => {
+const Aboutaha = props => {
   const { t } = props;
   const { node: img } = props.titlepic.ahapic[0];
   return (
     <div>
-      <Styledh1>{t('heading')}</Styledh1>
+      <Styledh1>{t("heading")}</Styledh1>
       <div className="md-grid">
         <div className="md-cell md-cell--8 md-cell--5-tablet md-cell--4-phone">
-          <Styledp>{t('description')}</Styledp>
+          <Styledp>{t("description")}</Styledp>
         </div>
         <div className="md-cell md-cell--4 md-cell--3-tablet md-cell--4-phone">
           <Img
             resolutions={img.resolutions}
-            style={{ display: 'block', margin: 'auto', borderRadius: '50%' }}
+            style={{ display: "block", margin: "auto", borderRadius: "50%" }}
           />
         </div>
       </div>
@@ -37,4 +37,4 @@ const Aboutaha = (props) => {
   );
 };
 
-export default translate('Aboutaha')(Aboutaha);
+export default translate("Aboutaha")(Aboutaha);

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import Button from 'react-md/lib/Buttons';
-import 'font-awesome/scss/font-awesome.scss';
+import React, { Component } from "react";
+import styled from "styled-components";
+import Button from "react-md/lib/Buttons";
+import "font-awesome/scss/font-awesome.scss";
 
 const Footerlink = styled.div`
   display: flex;

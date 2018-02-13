@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
-import Button from 'react-md/lib/Buttons';
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
+import Button from "react-md/lib/Buttons";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const StyledDivCenter = styled.div`
   font-weight: 900;
 `;
 
-const PostNav = (props) => {
+const PostNav = props => {
   const { prev, next } = props;
   return (
     <StyledDiv>
@@ -22,8 +22,8 @@ const PostNav = (props) => {
         {prev != null && (
           <Link to={prev.frontmatter.path}>
             <Button flat iconClassName="fa fa-arrow-left">
-              {' '}
-              Prev{' '}
+              {" "}
+              Prev{" "}
             </Button>
           </Link>
         )}
@@ -31,8 +31,8 @@ const PostNav = (props) => {
       <StyledDivCenter>
         <Link to="/blog">
           <Button flat icon={false} iconClassName="fa fa-list-alt">
-            {' '}
-            Blog{' '}
+            {" "}
+            Blog{" "}
           </Button>
         </Link>
       </StyledDivCenter>
@@ -40,8 +40,8 @@ const PostNav = (props) => {
         {next != null && (
           <Link to={next.frontmatter.path}>
             <Button flat iconBefore={false} iconClassName="fa fa-arrow-right">
-              {' '}
-              Next{' '}
+              {" "}
+              Next{" "}
             </Button>
           </Link>
         )}

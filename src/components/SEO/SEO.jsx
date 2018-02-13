@@ -1,11 +1,9 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import config from '../../../data/SiteConfig';
+import React from "react";
+import Helmet from "react-helmet";
+import config from "../../../data/SiteConfig";
 
-const SEO = (props) => {
-  const {
- postNode, postPath, blog, postSEO,
-} = props;
+const SEO = props => {
+  const { postNode, postPath, blog, postSEO } = props;
   let title;
   let description;
   let image;
@@ -26,7 +24,7 @@ const SEO = (props) => {
   let blogURL;
   if (blog) {
     blogURL = `${config.siteUrl}/blog`;
-    title += ' Blog';
+    title += " Blog";
     description = `Achim Hannemann ${description}`;
   } else {
     blogURL = config.siteUrl;
@@ -34,41 +32,41 @@ const SEO = (props) => {
 
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "http://schema.org",
+      "@type": "WebSite",
       url: blogURL,
-      name: title,
-    },
+      name: title
+    }
   ];
   if (postSEO) {
     schemaOrgJSONLD.push([
       {
-        '@context': 'http://schema.org',
-        '@type': 'BreadcrumbList',
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
         itemListElement: [
           {
-            '@type': 'ListItem',
+            "@type": "ListItem",
             position: 1,
             item: {
-              '@id': postURL,
+              "@id": postURL,
               name: title,
-              image,
-            },
-          },
-        ],
+              image
+            }
+          }
+        ]
       },
       {
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
         url: blogURL,
         name: title,
         headline: title,
         image: {
-          '@type': 'ImageObject',
-          url: image,
+          "@type": "ImageObject",
+          url: image
         },
-        description,
-      },
+        description
+      }
     ]);
   }
 

@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-import Button from 'react-md/lib/Buttons';
-import Link from 'gatsby-link';
-import 'font-awesome/scss/font-awesome.scss';
-import _ from 'lodash';
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
+import Button from "react-md/lib/Buttons";
+import Link from "gatsby-link";
+import "font-awesome/scss/font-awesome.scss";
+import _ from "lodash";
 
 const Styledh1 = styled.h1`
   margin-top: 25px;
@@ -27,11 +27,11 @@ export default function ModalTemplate({ data, pathContext }) {
           </div>
         ))}
       </div>
-      <div style={{ textAlign: 'center', fontWeight: '700', margin: '15px' }}>
+      <div style={{ textAlign: "center", fontWeight: "700", margin: "15px" }}>
         <Link to="/">
           <Button flat icon={false} iconClassName="fa fa-home">
-            {' '}
-            Home{' '}
+            {" "}
+            Home{" "}
           </Button>
         </Link>
       </div>
