@@ -1,7 +1,7 @@
 ---
 title: ISE 2016
 path: /ise-2016
-date: '2016-02-25'
+date: '2016-02-15'
 tags:
   - av
   - ise
