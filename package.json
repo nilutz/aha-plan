@@ -55,7 +55,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:md": "eslint --ext md .",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write",
+    "format:js": "prettier 'src/**/*.{js,jsx}' --write",
     "lint": "eslint src/**/*/*.{js,jsx}",
     "lint:fix": "eslint  src/**/*/*.{js,jsx} --fix",
     "lint:p": "eslint *.{js,jsx}",
