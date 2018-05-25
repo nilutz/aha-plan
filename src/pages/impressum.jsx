@@ -131,7 +131,42 @@ const Impressum = () => (
         finden Sie etwa in der Google Analytics-Hilfe
         (https://support.google.com/analytics/answer/6004245?hl=de).
       </p>
-      <h5>5. Social Media Plug-ins</h5>
+      <h5>5. Cookies</h5>
+      <p>
+        Wir setzen auf unserer Seite Cookies ein. Hierbei handelt es sich um
+        kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem
+        Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie
+        unsere Seite besuchen. Cookies richten auf Ihrem Endgerät keinen Schaden
+        an, enthalten keine Viren, Trojaner oder sonstige Schadsoftware. In dem
+        Cookie werden Informationen abgelegt, die sich jeweils im Zusammenhang
+        mit dem spezifisch eingesetzten Endgerät ergeben. Dies bedeutet jedoch
+        nicht, dass wir dadurch unmittelbar Kenntnis von Ihrer Identität
+        erhalten. Der Einsatz von Cookies dient einerseits dazu, die Nutzung
+        unseres Angebots für Sie angenehmer zu gestalten. So setzen wir
+        sogenannte Session-Cookies ein, um zu erkennen, dass Sie einzelne Seiten
+        unserer Website bereits besucht haben. Diese werden nach Verlassen
+        unserer Seite automatisch gelöscht. Darüber hinaus setzen wir ebenfalls
+        zur Optimierung der Benutzerfreundlichkeit temporäre Cookies ein, die
+        für einen bestimmten festgelegten Zeitraum auf Ihrem Endgerät
+        gespeichert werden. Besuchen Sie unsere Seite erneut, um unsere Dienste
+        in Anspruch zu nehmen, wird automatisch erkannt, dass Sie bereits bei
+        uns waren und welche Eingaben und Einstellungen sie getätigt haben, um
+        diese nicht noch einmal eingeben zu müssen. Zum anderen setzten wir
+        Cookies ein, um die Nutzung unserer Website statistisch zu erfassen und
+        zum Zwecke der Optimierung unseres Angebotes für Sie auszuwerten (siehe
+        Ziff. 5). Diese Cookies ermöglichen es uns, bei einem erneuten Besuch
+        unserer Seite automatisch zu erkennen, dass Sie bereits bei uns waren.
+        Diese Cookies werden nach einer jeweils definierten Zeit automatisch
+        gelöscht. Die durch Cookies verarbeiteten Daten sind für die genannten
+        Zwecke zur Wahrung unserer berechtigten Interessen sowie der Dritter
+        nach Art. 6 Abs. 1 S. 1 lit. f DSGVO erforderlich. Die meisten Browser
+        akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so
+        konfigurieren, dass keine Cookies auf Ihrem Computer gespeichert werden
+        oder stets ein Hinweis erscheint, bevor ein neuer Cookie angelegt wird.
+        Die vollständige Deaktivierung von Cookies kann jedoch dazu führen, dass
+        Sie nicht alle Funktionen unserer Website nutzen können.
+      </p>
+      <h5>6. Social Media Plug-ins</h5>
       <p>
         Wir setzen auf unserer Website auf Grundlage des Art. 6 Abs. 1 S. 1 lit.
         f DSGVO Social Plug-ins der sozialen Netzwerke Facebook, Twitter und
@@ -183,7 +218,7 @@ const Impressum = () => (
         Linkedin/Twitter ausloggen. Ebenfalls ist es möglich die Xing- /
         Linkedin- / Twitter- Plugins mit Add-ons für Ihren Browser zu blocken.
       </p>
-      <h5>6. Betroffenenrechte</h5>
+      <h5>7. Betroffenenrechte</h5>
       <p>
         Sie haben das Recht:
         <li>
