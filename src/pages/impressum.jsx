@@ -89,7 +89,7 @@ const Impressum = () => (
         Tracking-Tools zu entnehmen.
       </p>
       <p>
-        i) Google Analytics1 Zum Zwecke der bedarfsgerechten Gestaltung und
+        i) Google Analytics: Zum Zwecke der bedarfsgerechten Gestaltung und
         fortlaufenden Optimierung unserer Seiten nutzen wir Google Analytics,
         ein Webanalysedienst der Google Inc.
         (https://www.google.de/intl/de/about/) (1600 Amphitheatre Parkway,
@@ -278,7 +278,7 @@ const Impressum = () => (
         oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher
         Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern.
         Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website
-        unter https://www.xyrechtsanwaelte.de/datenschutz von Ihnen abgerufen
+        unter https://www.aha-plan.de/impressum von Ihnen abgerufen
         und ausgedruckt werden.
       </p>
     </div>
