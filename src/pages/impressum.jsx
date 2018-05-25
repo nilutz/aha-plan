@@ -59,18 +59,6 @@ const Impressum = () => (
         Erläuterungen dazu erhalten Sie unter den Ziff. 4 und 5 dieser
         Datenschutzerklärung.
       </p>
-      <p>
-        c) Bei Nutzung unseres Kontaktformulars Bei Fragen jeglicher Art bieten
-        wir Ihnen die Möglichkeit, mit uns über ein auf der Website
-        bereitgestelltes Formular Kontakt aufzunehmen. Dabei ist die Angabe
-        einer gültigen E-Mail-Adresse erforderlich, damit wir wissen, von wem
-        die Anfrage stammt und um diese beantworten zu können. Weitere Angaben
-        können freiwillig getätigt werden. Die Datenverarbeitung zum Zwecke der
-        Kontaktaufnahme mit uns erfolgt nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf
-        Grundlage Ihrer freiwillig erteilten Einwilligung. Die für die Benutzung
-        des Kontaktformulars von uns erhobenen personenbezogenen Daten werden
-        nach Erledigung der von Ihnen gestellten Anfrage automatisch gelöscht.
-      </p>
       <h5>3. Weitergabe von Daten</h5>
       <p>
         Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den
