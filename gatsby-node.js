@@ -1,16 +1,12 @@
-const path = require("path");
-const _ = require("lodash");
-const fs = require("fs-extra");
-const webpackLodashPlugin = require("lodash-webpack-plugin");
+const path = require('path');
+const _ = require('lodash');
+const fs = require('fs-extra');
+const webpackLodashPlugin = require('lodash-webpack-plugin');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const blogTemplate = path.resolve(
-    "src/components/BlogTemplate/BlogTemplate.jsx"
-  );
-  const modalTemplate = path.resolve(
-    "src/components/ModalTemplate/ModalTemplate.jsx"
-  );
+  const blogTemplate = path.resolve('src/components/BlogTemplate/BlogTemplate.jsx');
+  const modalTemplate = path.resolve('src/components/ModalTemplate/ModalTemplate.jsx');
 
   return graphql(`
     {
@@ -42,7 +38,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
@@ -55,22 +51,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: blogTemplate,
         context: {
           prev,
-          next
-        }
+          next,
+        },
       });
     });
 
     images.forEach(({ node }) => {
       // modifing the returned string
-      const slug = node.relativePath.split("/").pop();
+      const slug = node.relativePath.split('/').pop();
 
       createPage({
         path: _.kebabCase(slug),
         component: modalTemplate,
         context: {
           id: slug,
-          rp: `/${node.relativePath}/`
-        }
+          rp: `/${node.relativePath}/`,
+        },
       });
     });
     return posts;
@@ -79,13 +75,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 exports.onPostBuild = () => {
   fs.copySync(
-    path.join(__dirname, "/src/locales"),
-    path.join(__dirname, "/public/locales")
+    path.join(__dirname, '/src/locales'),
+    path.join(__dirname, '/public/locales'),
   );
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
-    config.plugin("Lodash", webpackLodashPlugin, null);
+  if (stage === 'build-javascript') {
+    config.plugin('Lodash', webpackLodashPlugin, null);
   }
 };

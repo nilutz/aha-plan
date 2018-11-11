@@ -1,0 +1,11 @@
+---
+title: Lifespace Digital-Signage- Konzept mit Perspektive
+path: /tunesien-lifespace
+date: '2018-11-11'
+tags:
+  - av
+  - digital
+image: /tunesienimage.jpg
+---
+
+PROFESSIONAL SYSTEM-Autor und Medientechnik-Experte Achim Hannemann hat im Rahmen eines dreimonatigen „Hilfe-zur- Selbsthilfe“-Einsatzes in Tunesien zusammen mit dem tunesischen Digital-Signage-Dienstleister Lifespace ein Digital-Signage-Konzept erarbeitet und in ersten Zügen umgesetzt, das traditionellen Meetingpoints ein neues Gesicht gibt. Ein Erfahrungsbericht ... [download](PS_0618_82-86.pdf)

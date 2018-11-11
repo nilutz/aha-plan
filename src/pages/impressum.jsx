@@ -313,8 +313,8 @@ const Impressum = () => (
         oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher
         Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern.
         Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website
-        unter https://www.aha-plan.de/impressum von Ihnen abgerufen
-        und ausgedruckt werden.
+        unter https://www.aha-plan.de/impressum von Ihnen abgerufen und
+        ausgedruckt werden.
       </p>
     </div>
     <div className="md-cell md-cell--12">
