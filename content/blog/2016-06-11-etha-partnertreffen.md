@@ -5,7 +5,7 @@ date: '2016-06-11'
 tags:
   - av
   - ise
-image: /ethafront.jpg
+image: /2016-06-11-etha-partnertreffen.jpg
 ---
 
 Die 1000 Jahre alte idyllische Gemeinde Urspringen liegt auf der fränkischen Platte nahe Marktheidenfeld und hat ca 1400 Einwohner. Hier haben sich in den letzen Jahren die Gebrüder Hoffmann das stattliche Unternehmen ETHA international GmbH & Co.kG aufgebaut.

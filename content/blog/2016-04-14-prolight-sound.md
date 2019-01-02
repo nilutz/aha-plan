@@ -5,7 +5,7 @@ date: '2016-04-14'
 tags:
   - av
   - ise
-image: /pls2016.jpg
+image: /2016-04-14-prolight-sound.jpg
 ---
 
 Hier die Übersicht zu den ausgewählten Beiträgen und ganz unten der Link zu allen Beiträgen:

@@ -5,7 +5,7 @@ date: '2016-12-01'
 tags:
   - display
   - espanol
-image: /disptechno.jpg
+image: /2016-12-01-type-de-producto.jpg
 ---
 
 ¿Qué tecnología de visualización tiene un futuro por delante?: ¿de alta resolución LCD, LED, HDR, o OLED punto cuántico? Nuestro autor y conferencia Diplayfachmann Achim Hannemann nos trae las últimas tecnologías y las tecnologías comparadas.

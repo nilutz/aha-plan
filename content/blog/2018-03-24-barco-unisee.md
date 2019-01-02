@@ -5,7 +5,7 @@ date: '2018-03-23'
 tags:
   - av
   - barco
-image: /barcounisee.jpg
+image: /2018-03-24-barco-unisee.jpg
 ---
 
 Seit Jahren wetteifern bekannte Displayhersteller um den schmalsten Rahmen bei LCD-Displays. Derzeit könnte Barco diesbezüglich die Nase vorne haben. So stellte der Hersteller bereits Ende Oktober 2017 einem kleinen Kreis von Fachplanern in Karlsruhe und kürzlich vor großem Fachpublikum auf der ISE in Amsterdam eine wirklich rahmenfreie LCD-Wand vor.

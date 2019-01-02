@@ -18,6 +18,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/${config.contentDir}/blog/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: config.siteGATrackingID,
@@ -25,6 +32,7 @@ module.exports = {
         respectDNT: true,
       },
     },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
@@ -38,7 +46,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
-                destinationDir: 'content/pdfs',
+                destinationDir: `${__dirname}/${config.contentDir}/pdfs`,
             },
           },
           {

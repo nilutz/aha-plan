@@ -1,0 +1,23 @@
+backend:
+  #name: test-repo
+  name: github
+  repo: nilutz/aha-plan
+
+publish_mode: editorial_workflow
+
+
+media_folder: content/blog
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: path, label: Path, default: "/path_to_post" }
+      - { name: date, label: Date, widget: date, format: "YYYY MM DD" }
+      - { name: title, label: Title }
+      - { name: tags, label: Tags, widget: list }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Body, widget: markdown }
