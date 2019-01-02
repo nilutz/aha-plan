@@ -43,13 +43,14 @@ const Preview = props => {
         <div className="md-cell md-cell--4">
           <Link to={post.frontmatter.path}>
             {isCover ? (
-              <img src={post.frontmatter.image} alt="" />
+              <img src={post.frontmatter.image} alt="" style="max-height: 300px; max-width: 250px;" />
             ) : (
               <Img
                 sizes={coverElem.sizes}
                 src={coverElem.sizes.src}
                 srcSet={coverElem.sizes.srcSet}
                 alt=""
+                style="max-height: 300px; max-width: 250px;" 
               />
             )}
           </Link>
