@@ -16,7 +16,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path, default: "/path_to_post" }
-      - { name: date, label: Date, widget: date, format: "YYYY MM DD" }
+      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
       - { name: title, label: Title }
       - { name: tags, label: Tags, widget: list }
       - { name: image, label: Image, widget: image }
