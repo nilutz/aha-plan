@@ -1,7 +1,7 @@
 backend:
   #name: test-repo
-  name: github
-  repo: nilutz/aha-plan
+  name: git-gateway
+  #repo: nilutz/aha-plan
 
 publish_mode: editorial_workflow
 
