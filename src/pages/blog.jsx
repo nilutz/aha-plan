@@ -37,6 +37,9 @@ export default function Blog({ data }) {
                 if (post.frontmatter.image === "/" + cover.sizes.originalName) {
                   return cover;
                 }
+                if (post.frontmatter.image === "/content/blog/" + cover.sizes.originalName){
+                  return cover;
+                }
                 //delete undefined elements
               })
               .filter(function(element) {
@@ -53,6 +56,7 @@ export default function Blog({ data }) {
     </div>
   );
 }
+//    covers: allImageSharp(filter: { id: { regex: "/(201[0-9]).|.jpg|.png|.jpeg|.JPG/" } }) {
 
 export const postListQuery = graphql`
   query PostList {
@@ -73,7 +77,7 @@ export const postListQuery = graphql`
         }
       }
     }
-    covers: allImageSharp(filter: { id: { regex: "/(201[0-9])./" } }) {
+    covers: allImageSharp(filter: { id: { regex: "/(blog)/" } }) {
       edges {
         node {
           ...Img_details

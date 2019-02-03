@@ -1,5 +1,5 @@
 ---
-path: /ise2019-trends
+path: /ise-2019-trends
 date: '2019-02-03'
 title: 'ISE 2019: Schon Trends erkennbar'
 tags:
